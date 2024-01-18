@@ -22,12 +22,12 @@ print(racines)
 ordre = p.o
 print("Le polynome est d'ordre",ordre,".")
 
-q = p.deriv() #dérivé dy polynome
+q = p.deriv() #dérivé du polynome
 print(q)
 
 Tol = 1.e-4
 
-def Newton(x0, f, df, tol): #methodes de Newton
+def Newton(x0, f, df, tol): #méthode de Newton
     x = x0 - f(x0)/df(x0)
     while abs(x-x0) < tol:
         x0 = x
